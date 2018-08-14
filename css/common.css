@@ -1,0 +1,24 @@
+<style>
+    html{
+    	font:normal normal 14px "Microsoft YaHei","serif";
+    	color:#333;
+        /*box-sizing:border-box;*/
+    }
+    *{
+    	margin:0;
+    	padding:0;
+    }
+    ul,ol{
+    	list-style: none;
+    }
+    a{
+    	color:#ccc;
+        font-size:12px;
+    	text-decoration: none;
+    }
+    input{
+       /* -web-kit-appearance:none;
+      -moz-appearance: none;
+    outline:0;*/
+    }
+</style>

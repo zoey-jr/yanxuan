@@ -1,0 +1,243 @@
+i{
+	background:url(../images/jinglin.png) no-repeat;
+	display:inline-block;
+}
+.componenttop{
+	height:240px;
+    background-color: #ededed;
+    position: relative;
+    z-index:1;
+}
+.header{
+	background-color: #333;
+}
+.container{
+	width:1100px;
+	height:36px;
+	line-height:36px;
+	margin:0 auto;
+	position:relative;
+}
+.header .container>a{
+	height:36px;
+	line-height:36px;
+}
+.header a:hover{
+	color:#fff;
+}
+.header ul{
+	position:absolute;
+	top:0;
+	right:0px;
+}
+.header ul>li{
+	float:left;
+}
+.header ul>li a{
+    height:36px;
+    line-height:36px;
+    margin-right:15px;
+}
+.header li:nth-child(2)~li::before{
+    content:"";
+    display:inline-block;
+    height:16px;
+    border-left:1px solid #5c5c5c;
+    margin-right:15px;
+    vertical-align: middle;
+}
+.shouji{
+	height:11px;
+	width:7px;
+	background-position:0 0;
+}
+.wrap{
+	width:1090px;
+	height:204px;
+	margin:0 auto;
+	background-color: #ccc;
+	/*position:relative;*/
+	padding-top:40px;
+	box-sizing:border-box;
+}
+.logo{
+    width:180px;
+    margin:0 auto;
+}
+.logo i{	
+    height:60px;
+    width:180px;	
+	background-position:0 -146px;
+}
+.wrap input{
+	position:absolute;
+	right:310px;
+	top:95px;
+	width:252px;
+	height:22px;
+	border:0;
+	border-bottom:1px solid #B4A078;
+	outline:0;
+}
+.wrap .sousuo i{
+    height:20px;
+    width:20px;
+    background-position:0 -261px;
+    position:absolute;
+    top:95px;
+    right:280px;
+}
+.wrap .gouwu i{
+	height:23px;
+    width:23px;
+    background-position:0 -80px;
+    position:absolute;
+    top:95px;
+    right:240px;
+}
+.wrap .gouwu i:last-child{
+	height:19px;
+    width:19px;
+    background-position:0 -51px;
+    position:absolute;
+    top:85px;
+    right:230px;
+    color:#fff;
+    font-style:normal;
+    text-align:center;
+}
+.wrap .nav>ul:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.wrap .nav>ul>li{
+    float:left;
+    margin-top:70px;
+    padding:0 24px;
+    height:23px;
+}
+.wrap .nav ul a{
+	color:#000;
+	font-size:14px;
+	font-weight:bold;
+	display:inline-block;
+	height:23px;
+}
+.wrap .nav>ul>li:hover>a{
+	color:#B4A078;
+	border-bottom:3px solid #B4A078;
+}
+.wrap .nav>ul>li:nth-child(12)::before{
+	content:"";
+	height:23px;
+	display:inline-block;
+	border-left:1px solid #B4A078;
+	box-sizing:border-box;
+    margin-right:25px;
+    vertical-align: middle;
+}
+.nav div.hidden{
+    width:100%;
+    height:230px;
+    background-color:teal;
+    position:absolute;
+    top:240px;
+    left:0;
+    text-align: center;
+    display:none;
+}
+.nav>ul>li:hover>.hidden{
+    display:block;
+}
+.nav div.hidden>ul{
+    width:1090px;
+    margin:0 auto;
+}
+.nav div.hidden>ul>li{
+    float:left;
+    margin-top:35px;
+    width:136px;
+}
+.nav div.hidden li>a{
+	display:inline-block;
+	height:64px;
+}
+.nav div.hidden li>a:hover{
+	color:#B4A078;
+}
+.banner{
+	width:100%;
+	overflow:hidden;
+	position:relative;
+}
+.banner>ul{
+	width:15360px;
+	animation:moving 10s steps(8) infinite;
+}
+@keyframes moving{
+	from{
+		transform:translateX(0);
+	}
+	to{
+		transform:translateX(-15360px);
+	}
+}
+.banner>ul>li{
+	float:left;
+}
+.banner img{
+	height:420px;
+	position:relative;	
+	left:-20%;
+	z-index:0;
+}
+.banner .iconfont{
+	font-size:26px;
+	color:#fff;
+	text-align:center;
+	line-height:50px;
+}
+.banner>ul>a{
+	display:inline-block;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	background-color:#ccc;
+	position:absolute;
+	top:50%;
+	margin-top:-25px;
+}
+.banner> ul>a:hover{
+	background-color:#B4A078;
+}
+.banner> ul>a.arrow-l{
+	left:100px;
+}
+.banner> ul>a.arrow-r{	
+	right:100px;	
+}
+.banner .xiaoyuan{
+	position:absolute;
+	top:90%;
+	left:50%;
+	margin-left:-96px;
+}
+.banner .xiaoyuan div{
+    height:8px;
+    width:8px;
+    border-radius:50%;
+    border:1px solid #ccc;
+    background-color: #fff;
+    float:left;
+    margin:0 8px;
+    box-sizing:border-box;
+}
+.banner .xiaoyuan>div:hover{
+	background-color: #B4A078;
+	border:none;
+	box-shadow:0 0 0 4px #dfcead;
+}
+.banner .xiaoyuan>div:hover img{
+	margin-left:-1920px;
+}
